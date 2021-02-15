@@ -1,0 +1,92 @@
+.loginscreen {
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+  background: url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.loginscreen__gradient {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(0, 0, 0, 0.2) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.loginscreen__body {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.loginscreen__body {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loginscreen__body h2 {
+  font-size: 30px;
+}
+.loginscreen__body > span {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.loginscreen__body > form > input {
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  outline: none;
+}
+.loginscreen__body form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.loginscreen_getstarted_button {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  outline-width: 0;
+  border: none;
+  margin-left: -50px;
+}
+.loginscreen__body p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.loginscreen_logo {
+  position: fixed;
+  top: 10px;
+  width: 125px;
+  cursor: pointer;
+}
+
+.login_button button {
+  position: absolute;
+  background-color: red;
+  border: none;
+  padding: 5px 15px;
+  top: 30px;
+  right: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginscreen__button {
+  outline-width: 0;
+}

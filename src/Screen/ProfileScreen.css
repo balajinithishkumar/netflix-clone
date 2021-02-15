@@ -1,0 +1,70 @@
+.profilescreen {
+  height: 100vh;
+}
+
+.profile_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.profile_body h1 {
+  color: white;
+  border-bottom: 1px solid gray;
+  font-weight: 400;
+  color: lightgray;
+}
+
+.profile__info img {
+  width: 100px;
+  height: 100px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.profile_user_info {
+  padding-top: 20px;
+  position: relative;
+  bottom: -20px;
+  left: -40px;
+}
+.profile_user_info h2 {
+  display: flex;
+  color: white;
+  width: 350px;
+  padding: 10px;
+  height: 20px;
+  background-color: gray;
+  align-items: center;
+  border-radius: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 50;
+}
+.profile_user_info h4 {
+  color: aliceblue;
+}
+.profile_user_info h3 {
+  margin-top: 30px;
+  color: white;
+  border-bottom: 2px solid gray;
+}
+
+.profile__plans button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 370px;
+  color: white;
+  background-color: red;
+  border: none;
+  outline-width: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile__plans button:hover {
+  background-color: rgb(250, 60, 60);
+  color: white;
+}
