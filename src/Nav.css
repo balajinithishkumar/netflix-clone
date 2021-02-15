@@ -6,7 +6,7 @@
   height: 40px;
   z-index: 1;
   transition-timing-function: ease-in;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
 .nav_black {
   background-color: black;
@@ -27,4 +27,5 @@
   height: 30px;
   width: 30px;
   padding-top: 5px;
+  cursor: pointer;
 }
