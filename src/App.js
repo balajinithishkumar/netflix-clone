@@ -5,14 +5,13 @@ import requests from "./Requests";
 import Row from "./Row";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoginScreen from "./Screen/LoginScreen";
-import { auth } from "./Screen/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectuser } from "./features/counterSlice";
 import ProfileScreen from "./Screen/ProfileScreen";
+import { auth } from "./Screen/firebase";
 function App() {
   const user = useSelector(selectuser);
   const dispatch = useDispatch();
-
   useEffect(() => {
     const unSubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
@@ -30,14 +29,18 @@ function App() {
     });
     return unSubscribe;
   }, []);
-  console.log(user);
   return (
     <div className="app">
       <Router>
         {!user ? (
-          <Route path="/loginscreen">
-            <LoginScreen />
-          </Route>
+          <>
+            <Route path="/">
+              <LoginScreen />
+            </Route>
+            <Route path="/home">
+              <HomeScreen />
+            </Route>
+          </>
         ) : (
           <Switch>
             <Route path="/profile">
@@ -74,5 +77,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

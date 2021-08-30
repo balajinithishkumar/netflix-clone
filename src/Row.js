@@ -1,7 +1,7 @@
 import axios from "./axios";
 import React, { useEffect, useState } from "react";
 import "./Row.css";
-function Row({ title, FetchUrl, isLargeRow = false}) {
+function Row({ title, FetchUrl, isLargeRow = false }) {
   const [movies, setmovies] = useState([]);
   const base_url = "https://image.tmdb.org/t/p/original/";
   useEffect(() => {
@@ -24,7 +24,6 @@ function Row({ title, FetchUrl, isLargeRow = false}) {
         ))}
       </div>
       {console.log(isLargeRow)}
-
     </div>
   );
 }
